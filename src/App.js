@@ -1,35 +1,42 @@
 import "./App.css";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useRef, useState } from "react";
+import { useSelector } from "react-redux";
+import { useState } from "react";
 import AddUserModal from "./components/AddUserModal";
+import { AnimatePresence } from "framer-motion";
+import CardTile from "./components/CardTile";
 // import FaRegMoon from "react-icons/fa"
 
 function App() {
   const [modal, setModal] = useState(false);
 
   const modalHandler = () => {
-    setModal(!modal)
-  }
-  const modalOpen = () => {
-    setModal(true)
-  }
+    setModal(!modal);
+  };
 
-  const userList = useSelector((state) => state.users.value);
+  const users = useSelector((state) => state.users.value);
 
   return (
-    <div className="w-full h-screen p-10 bg-neutral-200 flex flex-col justify-center items-center dark:bg-neutral-800 transition-all duration-500">
+    <div className="w-full h-screen font-LGC p-10 bg-neutral-200 flex flex-col justify-center items-center dark:bg-neutral-800 transition-all duration-500">
       <button
-        className="py-2 px-3 mt-6 rounded-xl bg-neutral-700 text-neutral-300 hover:scale-105 hover:bg-purple-600 transition-all duration-500"
+        className="py-2 px-3 mt-6 rounded-xl bg-neutral-700 text-neutral-300 hover:scale-105 hover:bg-purple-600 transition-all duration-500 select-none"
         onClick={modalHandler}
       >
         Add User
       </button>
 
-      {modal && <AddUserModal modal={modal} toggle={modalHandler} setModal={setModal} />}
-      {/* <div className='text-white m-10' >MODAL</div> */}
-      <div className="p-4 mt-10 dark:text-neutral-200">
-        {userList.map((user) => {
-          return <h1>{user.name}</h1>;
+      <AnimatePresence>
+        {modal && (
+          <AddUserModal
+            modal={modal}
+            toggle={modalHandler}
+            setModal={setModal}
+          />
+        )}
+      </AnimatePresence>
+
+      <div className="w-full max-w-2xl mt-10 flex flex-wrap gap-5 dark:text-neutral-200 select-none">
+        {users.map((user) => {
+          return <CardTile key={user.id} user={user} />;
         })}
       </div>
     </div>

@@ -2,3 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 100;
+    src: url('/public/fonts/CodeNext-Trial-Hairline.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 200;
+    src: url('/public/fonts/CodeNext-Trial-Thin.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 300;
+    src: url('/public/fonts/CodeNext-Trial-Light.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 400;
+    src: url('/public/fonts/CodeNext-Trial-Book.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 500;
+    src: url('/public/fonts/CodeNext-Trial-Regular.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 600;
+    src: url('/public/fonts/CodeNext-Trial-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 700;
+    src: url('/public/fonts/CodeNext-Trial-Bold.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 800;
+    src: url('/public/fonts/CodeNext-Trial-ExtraBold.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 900;
+    src: url('/public/fonts/CodeNext-Trial-Heavy.ttf');
+  }
+  @font-face {
+    font-family: "CodeNext";
+    font-weight: 1000;
+    src: url('/public/fonts/CodeNext-Trial-Black.ttf');
+  }
+}
+
+body {
+  font-family: 'CodeNext';
+}
