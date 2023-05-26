@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/react-redux-practice/static/css/main.c044355c.css",
-    "main.js": "/react-redux-practice/static/js/main.5383142c.js",
+    "main.css": "/react-redux-practice/static/css/main.7a3ba7fe.css",
+    "main.js": "/react-redux-practice/static/js/main.80fa6bd9.js",
     "static/js/787.9921659f.chunk.js": "/react-redux-practice/static/js/787.9921659f.chunk.js",
+    "static/media/CodeNext-Trial-Bold.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Bold.669ef309b4d283ba2079.ttf",
+    "static/media/CodeNext-Trial-Black.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Black.40f4ca57f613282180ef.ttf",
+    "static/media/CodeNext-Trial-ExtraBold.ttf": "/react-redux-practice/static/media/CodeNext-Trial-ExtraBold.a15c1de42126d1b14cc7.ttf",
+    "static/media/CodeNext-Trial-Heavy.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Heavy.755bb7f6e9cfd92cb0f0.ttf",
+    "static/media/CodeNext-Trial-Regular.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Regular.f4668f0660f24f7c29ce.ttf",
+    "static/media/CodeNext-Trial-Book.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Book.9ff189dff376df804963.ttf",
+    "static/media/CodeNext-Trial-SemiBold.ttf": "/react-redux-practice/static/media/CodeNext-Trial-SemiBold.2b1e05cf97c41ef7bfb2.ttf",
+    "static/media/CodeNext-Trial-Thin.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Thin.a6fb5cbc1b110e7369c2.ttf",
+    "static/media/CodeNext-Trial-Hairline.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Hairline.15a84c3dad71fa3c898e.ttf",
+    "static/media/CodeNext-Trial-Light.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Light.6a8c457c708e0885504e.ttf",
     "index.html": "/react-redux-practice/index.html",
-    "main.c044355c.css.map": "/react-redux-practice/static/css/main.c044355c.css.map",
-    "main.5383142c.js.map": "/react-redux-practice/static/js/main.5383142c.js.map",
+    "main.7a3ba7fe.css.map": "/react-redux-practice/static/css/main.7a3ba7fe.css.map",
+    "main.80fa6bd9.js.map": "/react-redux-practice/static/js/main.80fa6bd9.js.map",
     "787.9921659f.chunk.js.map": "/react-redux-practice/static/js/787.9921659f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c044355c.css",
-    "static/js/main.5383142c.js"
+    "static/css/main.7a3ba7fe.css",
+    "static/js/main.80fa6bd9.js"
   ]
 }
