@@ -8,6 +8,7 @@ const AddUserModal = ({ toggle, modal, setModal }) => {
   const [name, setName] = useState("");
   const [username, setUsername] = useState("");
   const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
   const dispatch = useDispatch();
   let modalRef = useRef();
   const userList = useSelector((state) => state.users.value);
@@ -26,13 +27,9 @@ const AddUserModal = ({ toggle, modal, setModal }) => {
     };
   });
 
-  // useEffect(() => {
-  //   console.log(name)
-  //   console.log(username)
-  // }, [name, username])
-
   const addUserHandler = () => {
-    if (name || username === "") {
+    console.log(name, "-", username);
+    if (name | (username === "")) {
       setError("Both name and username must have a valid value");
       setTimeout(() => {
         setError("");
@@ -45,19 +42,16 @@ const AddUserModal = ({ toggle, modal, setModal }) => {
           username,
         })
       );
-      console.log("KULLANICILAR: ", userList);
-      setModal(false);
+      // console.log("KULLANICILAR: ", userList);
+      setSuccess("User has been added successfully");
+      setTimeout(() => {
+        setSuccess("");
+        setModal(false);
+      }, "1500");
     }
   };
 
   return (
-    // <div
-    //   className={`${
-    //     state === false ? "hidden scale-50" : "block scale-100"
-    //   }fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-neutral-800 bg-opacity-75`}
-    //   onClick={state}
-    // >
-    // <AnimatePresence>
     <motion.div
       className="fixed top-0 left-0 w-screen h-screen flex justify-center items-center bg-neutral-800 bg-opacity-75"
       initial={{ opacity: 0 }}
@@ -84,17 +78,24 @@ const AddUserModal = ({ toggle, modal, setModal }) => {
               {error}
             </motion.div>
           )}
+          {success && (
+            <motion.div
+              className="fixed top-0 p-3 bg-green-800 text-neutral-200 rounded-xl text-center transition-all duration-500 select-none"
+              initial={{ y: -60 }}
+              animate={{ y: 20 }}
+              exit={{ y: -3000 }}
+              transition={{ duration: 0.1 }}
+            >
+              {success}
+            </motion.div>
+          )}
         </AnimatePresence>
 
         <button
-          className="absolute top-3 right-3 p-1 bg-neutral-500 hover:bg-red-500 rounded-lg transition-all duration-200"
+          className="absolute top-3 right-3 p-1 bg-neutral-500 hover:bg-red-500 rounded-lg transition-all duration-300"
           onClick={toggle}
         >
-          <X
-            size={17}
-            weight="bold"
-            className="text-neutral-800 hover:text-red-900 transition-all duration-200sss"
-          />
+          <X size={17} weight="bold" className="text-neutral-800 " />
         </button>
 
         <h1 className="dark:text-neutral-200 mb-6 font-bold text-3xl">
@@ -124,7 +125,6 @@ const AddUserModal = ({ toggle, modal, setModal }) => {
         </button>
       </div>
     </motion.div>
-    // </AnimatePresence>
   );
 };
 
