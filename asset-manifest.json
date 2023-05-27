@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-redux-practice/static/css/main.7a3ba7fe.css",
-    "main.js": "/react-redux-practice/static/js/main.80fa6bd9.js",
+    "main.css": "/react-redux-practice/static/css/main.5f960d99.css",
+    "main.js": "/react-redux-practice/static/js/main.978dd407.js",
     "static/js/787.9921659f.chunk.js": "/react-redux-practice/static/js/787.9921659f.chunk.js",
     "static/media/CodeNext-Trial-Bold.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Bold.669ef309b4d283ba2079.ttf",
     "static/media/CodeNext-Trial-Black.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Black.40f4ca57f613282180ef.ttf",
@@ -14,12 +14,12 @@
     "static/media/CodeNext-Trial-Hairline.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Hairline.15a84c3dad71fa3c898e.ttf",
     "static/media/CodeNext-Trial-Light.ttf": "/react-redux-practice/static/media/CodeNext-Trial-Light.6a8c457c708e0885504e.ttf",
     "index.html": "/react-redux-practice/index.html",
-    "main.7a3ba7fe.css.map": "/react-redux-practice/static/css/main.7a3ba7fe.css.map",
-    "main.80fa6bd9.js.map": "/react-redux-practice/static/js/main.80fa6bd9.js.map",
+    "main.5f960d99.css.map": "/react-redux-practice/static/css/main.5f960d99.css.map",
+    "main.978dd407.js.map": "/react-redux-practice/static/js/main.978dd407.js.map",
     "787.9921659f.chunk.js.map": "/react-redux-practice/static/js/787.9921659f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a3ba7fe.css",
-    "static/js/main.80fa6bd9.js"
+    "static/css/main.5f960d99.css",
+    "static/js/main.978dd407.js"
   ]
 }
